@@ -1,11 +1,47 @@
-<form action="/submit">
-    <lebel for="name">Name:</lebel>
-    <input type="text" id="name"
-    name="name">
-    <lebel for="email">Email</lebel>
-    <input type="email"id="email"
-    name="email"/>
-    <textarea></textarea>
-    <input type="submit" value="Submit">
-    
+<h1>Sign Up Form</h1>
+<form action="/submit" method="post">
+    <fieldset>
+        <legend> Persoal Information</legend>
+        <lebel for="name">First Name:</lebel><br />
+        <input type="text" id="name"/><br />
+        <lebel for="name">Last Name:</lebel><br />
+        <input type="text" id="name" /><br />
+        <lebel for="email">Email:</lebel><br />
+        <input type="email" id="email" /><br />
+        <lebel for="dob">Date Of Birth:</lebel><br />
+        <input type="date" id="dob" /><br />
+        </fieldset>
+        <fieldset>
+            <legend> Other Information</legend>
+            <lebel for="job type">Job Type:</lebel><br />
+            <select id="job type" name="job type">
+                <option>health care</option>
+                <option>business</option>
+                <option>Engineer</option>
+            </select>
+            <br /><br />
+            <lebel for="description">Description:</lebel><br />
+            <textarea id="decsription" name="description"></textarea><br />
+
+        </fieldset>
+        <input type="submit"value="submit" />
+
 </form>
+<h2>Job Location</h2>
+    <table border="1">
+      <tr>
+        <th>Boston</th>
+        <th>New York</th>
+        <th>Michigan</th>
+      </tr>
+      <tr>
+        <td>Dorchester</td>
+        <td>Jackson Height</td>
+        <td>Wareen</td>
+      </tr>
+      <tr>
+        <td>Milton</td>
+        <td>Brookline</td>
+        <td>Troy</td>
+      </tr>
+    </table>
